@@ -42,28 +42,26 @@ _.multiply = function(a,b){
 
 //_.divide takes two numbers as parameters and returns their quotient
 _.divide = function(a,b){
-  //Code Goes Below
-  //a divided by b
+  return a / b
   
 }
 
 //_.remainderOperator takes two numbers as parameters and returns their remainder of a divided by b
 _.remainderOperator = function(a,b){
-  //Code Goes Below
-  //return the remainder of a divided by b
+  return a % b
 }
 
 //_.increment takes a number as a parameter and increces it by 1
 // Ensure you use the proper increment operator(not a+1)
 _.increment = function(a){
-  //Code Goes Below
+  return a+1
   
 }
 
 //_.decrement takes a number as a parameter and reduces it by 1
 // Ensure you use the proper decrement operator (not a-1)
 _.decrement = function(a){
-  //Code Goes Below
+  return a-1
   
 }
 

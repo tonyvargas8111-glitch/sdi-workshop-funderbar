@@ -57,8 +57,8 @@
 
       it('should return quotient of the two numbers passed into it', function() {
         expect(_.divide(1,1)).to.eql(1);
-        expect(_.divide(144, 12)).to.eql(FILL_ME_IN);
-        expect(_.divide(65,10)).to.eql(FILL_ME_IN);
+        expect(_.divide(144, 12)).to.eql(12)
+        expect(_.divide(65,10)).to.eql(6.5)
       });
     });
 
@@ -66,13 +66,13 @@
 
       it('should return remainderOperator of the two numbers passed into it', function() {
         expect(_.remainderOperator(1,1)).to.eql(0);
-        expect(_.remainderOperator(37, 10)).to.eql(FILL_ME_IN);
-        expect(_.remainderOperator(167, 12)).to.eql(FILL_ME_IN);
-        expect(_.remainderOperator(99, 100)).to.eql(FILL_ME_IN);
-        expect(_.remainderOperator(100, 100)).to.eql(FILL_ME_IN);
-        expect(_.remainderOperator(101, 100)).to.eql(FILL_ME_IN);
-        expect(_.remainderOperator(200, 100)).to.eql(FILL_ME_IN);
-        expect(_.remainderOperator(201, 100)).to.eql(FILL_ME_IN);
+        expect(_.remainderOperator(37, 10)).to.eql(7);
+        expect(_.remainderOperator(167, 12)).to.eql(11)
+        expect(_.remainderOperator(99, 100)).to.eql(99)
+        expect(_.remainderOperator(100, 100)).to.eql(0);
+        expect(_.remainderOperator(101, 100)).to.eql(1);
+        expect(_.remainderOperator(200, 100)).to.eql(0);
+        expect(_.remainderOperator(201, 100)).to.eql(1);
       });
     });
 
@@ -80,8 +80,8 @@
 
       it('should return the number passed in to it incremented by 1', function() {
         expect(_.increment(1)).to.eql(2);
-        expect(_.increment(37)).to.eql(FILL_ME_IN);
-        expect(_.increment(167)).to.eql(FILL_ME_IN);
+        expect(_.increment(37)).to.eql(38)
+        expect(_.increment(167)).to.eql(168)
       });
     });
 
@@ -89,8 +89,8 @@
 
       it('should return the the number passed in to it decremented by 1', function() {
         expect(_.decrement(1)).to.eql(0);
-        expect(_.decrement(37)).to.eql(FILL_ME_IN);
-        expect(_.decrement(167)).to.eql(FILL_ME_IN);
+        expect(_.decrement(37)).to.eql(36)
+        expect(_.decrement(167)).to.eql(166)
       });
     });
 
@@ -101,16 +101,16 @@
       //Feel free to use a calculator if necessary to solve the problem in the correct order. 
       it('determine the outcome based on the equation passed.', function() {
         var test1 = (a,b,c) => a + b * c;
-        expect(_.mathOrder(test1(1,2,3))).to.eql(FILL_ME_IN);
+        expect(_.mathOrder(test1(1,2,3))).to.eql(7);
 
         var test2 = (a,b,c) => a * b + c;
-        expect(_.mathOrder(test2(1,2,3))).to.eql(FILL_ME_IN);
+        expect(_.mathOrder(test2(1,2,3))).to.eql(5);
 
         var test3 = (a,b,c) => a / c * b + c;
-        expect(_.mathOrder(test3(6,8,2))).to.eql(FILL_ME_IN);
+        expect(_.mathOrder(test3(6,8,2))).to.eql(26)
 
         var test4 = (a,b,c) => a + c + b + b * a / b - c / b;
-        expect(_.mathOrder(test4(10,2,6))).to.eql(FILL_ME_IN);
+        expect(_.mathOrder(test4(10,2,6))).to.eql(25)
       });
     });
 
