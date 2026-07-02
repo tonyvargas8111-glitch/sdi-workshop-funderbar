@@ -110,7 +110,11 @@
         
         expect(_.forLoop(['Coding ', 'is ', 'the ', 'best!'])).to.equal('Coding is the best!');
         expect(_.forLoop(['I ', 'got ', 'this!'])).to.equal('I got this!');
+<<<<<<< HEAD
         expect(_.forLoop([1,2,3,4,5])).to.equal("12345");
+=======
+        expect(_.forLoop([1,2,3,4,5])).to.equal('12345');
+>>>>>>> refs/remotes/origin/master
       });
       
     });
@@ -122,11 +126,19 @@
     describe('TEST ONLY: Array Values', function() { 
       let arry = [1,'Javascript',2,45,'Array',34,64,true];
       it("TEST ONLY: Access the Array's Values", function(){
+<<<<<<< HEAD
         expect(array[0]).to.eql(1);
         expect(7).to.eql(true);
         expect(4).to.eql('Array');
         expect(1).to.eql('Javascript');
         expect(8).to.eql(undefined);
+=======
+        expect(arry[0]).to.eql(1);
+        expect(arry[7]).to.eql(true);
+        expect(arry[4]).to.eql('Array');
+        expect(arry[1]).to.eql('Javascript');
+        expect(arry[8]).to.eql(undefined);
+>>>>>>> refs/remotes/origin/master
       });
 
     });
