@@ -209,9 +209,16 @@ _.falsyOrTruthy = function(a){
     //You may notice you did this work already in previous functions but need to combine them in some way. Ideally, you should call the previous two functions in your implementation instead of copy/pasting the 'guts'.
     _.ifElseFor = function(a,b){
       //Code Goes Below
-
-    }
-
+      let result
+       if (b === 'number') { 
+        result = _.forIfElseNum(a)
+       } else {
+       if (b === 'string') 
+        result = _.forIfElseStr(a)
+       }
+       return result
+      }
+  
     //PART III
     //-------------------------------------------------------------------------
 /*
