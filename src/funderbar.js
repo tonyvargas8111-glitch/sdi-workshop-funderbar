@@ -151,21 +151,14 @@ _.falsyOrTruthy = function(a){
     //Return the array as a single string.
     _.forLoop = function(a){
       //Code Goes Below
-<<<<<<< HEAD
+
       let result = "";
       for (let i = 0; i < a.length; i++) {
         result += a[i]
       }
         return result
     };
-=======
-      var result = ""
-      for (let i = 0; i < a.length; i++) {
-        result += a[i] 
-      }
-      return result
-    }
->>>>>>> refs/remotes/origin/master
+
 
     //Using NESTED for loops, iterate through an array or arrays
     _.nestedForLoop = function(a){
