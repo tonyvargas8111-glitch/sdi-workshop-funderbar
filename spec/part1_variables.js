@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  var FILL_ME_IN = 'Fill this value in';
+  var resutls = 'Fill this value in';
 
 
   describe('Part I --- VARIABLES', function() {
@@ -18,10 +18,10 @@
     describe('dataType', function() {
 
       it('should return the data type of the value passed into it', function() {
-        expect(_.dataType(1)).to.eql(FILL_ME_IN);
-        expect(_.dataType(false)).to.eql(FILL_ME_IN);
-        expect(_.dataType('Data Type')).to.equal(FILL_ME_IN);
-        expect(_.dataType(undefined)).to.equal(FILL_ME_IN);
+        expect(_.dataType(1)).to.eql("number");
+        expect(_.dataType(false)).to.eql("boolean");
+        expect(_.dataType('Data Type')).to.equal("string");
+        expect(_.dataType(undefined)).to.equal("undefined");
       });
     });
 
@@ -30,7 +30,7 @@
       it('should return sum of the two numbers passed into it', function() {
         expect(_.sum(1,1)).to.eql(2);
         expect(_.sum(33, 150)).to.eql(183);
-        expect(_.sum(10,-5)).to.eql(FILL_ME_IN);
+        expect(_.sum(10,-5)).to.eql(5);
       });
     });
 
@@ -39,8 +39,8 @@
       //_.subtract(a,b) === a - b
       it('should return difference of the two numbers passed into it', function() {
         expect(_.subtract(1,1)).to.eql(0);
-        expect(_.subtract(222, 62)).to.eql(FILL_ME_IN);
-        expect(_.subtract(10,-5)).to.eql(FILL_ME_IN);
+        expect(_.subtract(222, 62)).to.eql(160)
+        expect(_.subtract(10,-5)).to.eql(15)
       });
     });
 
@@ -48,8 +48,8 @@
 
       it('should return product of the two numbers passed into it', function() {
         expect(_.multiply(1,1)).to.eql(1);
-        expect(_.multiply(11, 5)).to.eql(FILL_ME_IN);
-        expect(_.multiply(10,-2)).to.eql(FILL_ME_IN);
+        expect(_.multiply(11, 5)).to.eql(55)
+        expect(_.multiply(10,-2)).to.eql(-20)
       });
     });
 
