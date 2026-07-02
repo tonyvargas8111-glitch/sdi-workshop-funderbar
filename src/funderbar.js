@@ -177,14 +177,31 @@ _.falsyOrTruthy = function(a){
     //If an index in the array is not a number add 1 to the above mentioned variable
     _.forIfElseNum = function(a){
       //Code Goes Below
+      let result = 0;
+      for (let i = 0; i < a.length; i++) {
+        if (typeof a[i] === 'number') {
+            result += a[i];
+        } else {
+          result += 1
+        }
+      }
+        return result
+    };
 
-    }
 
     //This function is similar to the above function. Only this time you will be building a sentence rather than a total number. Loop through the array and concatenate the strings in it to make a sentence.
     //If an index in the array is not a string add and empty string ("") to the local variable
     _.forIfElseStr = function(a){
       //Code Goes Below
-
+      let result = "";
+        for (let i = 0; i < a.length; i++) {
+          if (typeof a[i] === 'string') {
+            result += a[i];
+          } else {
+          result += ""
+        }
+      }
+        return result
     }
 
     //In this function you will loop though the passed in array. Prior to that you need to check the second parameter to determine what you will be returning. 
