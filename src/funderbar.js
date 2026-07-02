@@ -123,22 +123,30 @@ _.falsyOrTruthy = function(a){
     //_.orOr will be using the || comparator
     _.orOr = function(a,b,c,d) {
       //Code Goes Below
-     
+     return a === b || c === d
       }
 
   //Control Flow
   //Create a basic if statement to pass the tests. 
   _.ifLogic = function(a, b){
     //Code Goes Below
+    if (a === b) {
+      return 'Great'
+    }
 
   }
 
     //Create a basic if else statement to pass the tests. 
     _.ifElseLogic = function(a, b){
       //Code Goes Below
-
+      if (a === b){
+        return "Great"
+      }
+      else {
+        return "Good"
     }
-
+  }
+  
     //Using a for loop, iterate through the array passed. 
     //Return the array as a single string.
     _.forLoop = function(a){

@@ -73,9 +73,9 @@
         //Then finally it will compare the outcome of the previous tow comparisons using the logical or
         expect(_.orOr(1,1,'string','string')).to.equal(true);
         //1 is equal to 1 resulting in true. 'string' is equal to 'string' resulting in true. If the first or the second is true then you will get true as a result.
-        expect(_.orOr(33,23,true,false)).to.equal(FILL_ME_IN);
-        expect(_.orOr(undefined,NaN,'learn','learn')).to.equal(FILL_ME_IN);
-        expect(_.orOr(false,"", 0, undefined )).to.equal(FILL_ME_IN);
+        expect(_.orOr(33,23,true,false)).to.equal(false);
+        expect(_.orOr(undefined,NaN,'learn','learn')).to.equal(true);
+        expect(_.orOr(false,"", 0, undefined )).to.equal(false);
       });
       
     }); 
