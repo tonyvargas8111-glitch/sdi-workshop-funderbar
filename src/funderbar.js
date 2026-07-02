@@ -163,8 +163,15 @@ _.falsyOrTruthy = function(a){
     //Using NESTED for loops, iterate through an array or arrays
     _.nestedForLoop = function(a){
       //Code Goes Below
-      
+      let sum = 0;
+      for (let i = 0; i < a.length; i++) {
+      for (let c = 0; c < a[i].length; c++) {
+        sum += a[i][c];
+      }
     }
+    return sum
+  }
+  
 
     //While looping through the array passed determine the data type of the element. If the element is a number add it to a variable. At the end return that variable. 
     //If an index in the array is not a number add 1 to the above mentioned variable
